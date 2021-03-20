@@ -1,0 +1,149 @@
+html, body, canvas, section, header, article, h1, h2, h3, h4, h5, h6, p, blockquote, pre, address, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font: 14px "Microsoft Yahei", "Droid Sans Fallback", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lt {
+    float: left;
+}
+
+.rg {
+    float: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: 700;
+    display: block;
+    margin: 0.45em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*reset end*/
+.markLayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111111111;
+    background: #000;
+    opacity: 0.5;
+}
+
+.loading {
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    text-align: center;
+    -webkit-animation: rotate 2.0s infinite linear;
+    animation: rotate 2.0s infinite linear;
+    z-index: 1000000;
+    top: 30%;
+    left: 34%;
+}
+
+.loading .dot1, .loading .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #24CA6C;
+    border-radius: 100%;
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.loading .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+/*loading end*/
+
+/*header*/
+.head{line-height: 0.74rem;height: 0.74rem;font-size: 0.32rem;padding:0 0.31rem;background:rgba(2,140,238,1);;color: #fff; text-align: center; }
+.head i{display:inline-block;width: 0.2rem; height: 0.2rem; border: 2px solid #fff; border-top: none; border-right: none;transform: rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);position: absolute;top: 0.25rem;  left: 0.3rem;}
+.head em{font-style: normal; color: #fff;  font-size: 0.24rem; position: absolute;top: 0; left: 0.5rem;}
+/*header end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
